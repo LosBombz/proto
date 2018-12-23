@@ -61,7 +61,7 @@
     <hr /> 
     <!-- text content -->
     <blockquote cite="http://www.sourceofquote.com">
-        Here's to the weird ones
+        Here's to the crazy ones. The misfits. The rebels.
         <cite>text of source: Steve Jobs</cite>
     </blockquote>
     <dl>
@@ -117,5 +117,98 @@
     <p>maybe this is referrenced<sub>1</sub>?</p>
     <p>maybe this is math <var>x</var><sup>2</sup></p>
     <p><del>this text is wrong</del> and should be delted and I'm suggesting <ins>this text</ins> should be added.</p>
+    <hr>
+    <!-- Table -->
+
+    <table>
+        <caption>This table is about something</caption>
+        <thead>
+            <tr>
+                <th>First</th>
+                <th>Second</th>
+                <th>Third</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>val 1</td>
+                <td>val 2</td>
+                <td>val 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>total 1</td>
+                <td>total 2</td>
+                <td>total 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <!-- forms -->
+    <form action="#">
+        <fieldset>
+            <legend>Check out these fields</legend>
+            <div>
+                <label for="text-input">Text input</label>
+                <input type="text" name="text-input" id="text-input">
+            </div>
+            <div role="radiogroup">
+                <label for="radio-input-1">Radio input 1</label>
+                <input type="radio" name="radio-input" id="radio-input-1">
+                <label for="radio-input-2">Radio input 2</label>
+                <input type="radio" name="radio-input" id="radio-input-2">
+                <label for="radio-input-3">Radio input 3</label>
+                <input type="radio" name="radio-input" id="radio-input-3">
+            </div>
+            <div>
+                <label for="select">Select</label>
+                <select name="select" id="select">
+                    <option value=""></option>
+                    <optgroup label="Number">
+                        <option value="1">option 1</option>
+                        <option value="2">option 2</option>
+                        <option value="3">option 3</option>
+                    </optgroup>
+                    <optgroup label="Leters">
+                        <option value="a">option a</option>
+                        <option value="b">option b</option>
+                        <option value="c">option c</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="checkbox">Checkbox</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+            </div>
+            <div>
+                <label for="switch">Switch</label>
+                <input type="checkbox" name="switch" id="switch" role="switch">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </div>
+            <div>
+                <label for="progress">Progress</label>
+                <progress name="progress" id="progress" max="100" value="70">70%</progress>
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+        </fieldset>
+    </form>
+    <hr>
+    <!-- interactive elements -->
+    <details>
+        <summary>Summary</summary>
+        details of the full thing seen once expanded
+    </details>
+
+    <dialog open>
+        <p>This is an open dialog</p>
+    </dialog>
+
 </body>
 </html>
