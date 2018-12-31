@@ -1,1 +1,129 @@
 /* proto of "proto" */
+
+:root {
+    --font-stack: Helvetica, Arial, sans-serif;
+    --text-color-primary: #050709;
+    --text-color-secondary: #DADFE1;
+    --link-color-primary: #3455DB;
+    --link-color-secondary: #777777;
+    --link-color-tertiary: #DB0A5B;
+    --bg-color-primary: #fbfbfb;
+    --bg-color-secondary: #eeeeee;
+    --border-primary: .2em solid var(--text-color-primary);
+
+    font-size: 62.5%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    color: var(--text-color-primary);
+    background: var(--body-color);
+    font-size: 1.6em;
+}
+
+/* link styles */
+a {
+ color:var(--link-color-primary);
+ transition: color .3s; 
+}
+
+a:visited {
+    color: var(--link-color-secondary);
+}
+
+a:hover {
+    color: var(--link-color-tertiary);
+}
+
+[target="_blank"]::before {
+    display: inline-block;
+    content: "➡️";
+    font-size: 1em;
+    padding: 0 0 0 .5rem;
+    transform: rotate(-20deg);
+}
+
+/* visual helpers */
+.visually-hidden {
+    display: none;
+}
+
+/* header */
+header {
+    background: var(--bg-color-primary);
+    border-bottom: .1em solid var(--text-color-primary);
+    display: flex;
+    padding:.8em;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    flex-grow: 0;
+}
+
+header .search-form {
+    flex-grow: 1;
+    display: flex;
+}
+
+header .search-form label {
+    flex-grow: 0;
+}
+
+header .search-form input {
+    flex-grow: 1;
+}
+
+header .search-form button {
+    flex-grow: 0;
+}
+
+header .header-menu {
+    flex-grow: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* cite styles */
+
+cite {
+   
+    padding: .4em;
+
+}
+cite a {
+    font-style: normal;
+}
+
+/* <abbr> */
+abbr {
+ border-bottom: 1px dotted #222;
+ color: #222;
+ cursor: help;
+}
+abbr[title] {
+   text-decoration: none; 
+}
+
+/* header styles */
+h1, h2, h3, h4, h5, h6 {
+    border-left: .25em solid var(--text-color-primary);
+    padding: .4em;
+}
+
+/* forms */
+input {
+    border: var(--border-primary);
+    padding: .4em;
+}
+
+button {
+    border: var(--border-primary);
+    padding: .4em;
+}

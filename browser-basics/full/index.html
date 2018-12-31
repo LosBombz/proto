@@ -16,9 +16,23 @@
     <!-- sectioning elements -->
     <!-- header -->
     <header>
-        <h1>Proto</h1>
-        <h2>a prototyping focussed design system</h2>
-        header contents
+        <div class="logo">
+            <a href="/">
+                <span aria-hidden class="icon">👾</span>
+                <span class="visually-hidden">space invader emoji</span>
+            </a>
+        </div>
+        <form action="#" class="search-form">
+            <label for="header-search">Primary search</label>
+            <input placeholder="javascript, animation, design systems" type="search">
+            <button type="submit">
+                <span>Search</span>
+            </button>
+        </form>
+        <menu class="header-menu">
+            <button class="avatar">Me</button>
+            <button class="menu">Menu</button>
+        </menu>
     </header>
     <a href="../atoms/header.html">Header</a>
     <hr>
@@ -95,10 +109,10 @@
     <p>paragraphs for days</p>
     <!-- inline text elements -->
     <hr>
-    <a href="#">a tags take you somewhere</a>
-    <abbr title="Always be closing">ABC</abbr>
-    <b>Draw attention to this line</b>
-    <cite>Carlos Escobar <a href="#">link to escofolio</a></cite>
+    <a href="#">a tags take you somewhere</a><br /><br />
+    <abbr title="Always be closing">ABC</abbr><br /><br />
+    <b>Draw attention to this line</b><br />
+    <cite>Carlos Escobar <a href="http://www.escofolio.com" target="_blank">link to escofolio</a></cite><br />
     <code>funtion foo(){}</code>
     <code>foo() => {}</code>
     <data value="123"> This is supposed to link to <em>machine readable non-time related</em> data via value attr</data>
