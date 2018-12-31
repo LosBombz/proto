@@ -64,22 +64,6 @@ header {
 
 }
 
-header:hover {
-    animation: header-hover 1s ease-in-out infinite;
-}
-
-@keyframes header-hover {
-    0% {
-        background: blueviolet;
-    }
-    50% {
-        background: palevioletred;
-    }
-    100% {
-        background: blueviolet;
-    }
-}
-
 header .logo {
     font-size: 1.8em;
     flex-grow: 0;
