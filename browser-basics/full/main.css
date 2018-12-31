@@ -58,13 +58,14 @@ header {
     background: var(--bg-color-primary);
     border-bottom: .1em solid var(--text-color-primary);
     display: flex;
-    padding:.8em;
+    padding: .8em 0;
     align-items: center;
 }
 
 header .logo {
     font-size: 1.8em;
     flex-grow: 0;
+    padding: 0 1em;
 }
 
 header .search-form {
@@ -72,12 +73,33 @@ header .search-form {
     display: flex;
 }
 
+header .search-group, 
+.search-group input {
+    width: 100%;
+}
+
+header .search-group {
+    position: relative;
+}
+
 header .search-form label {
     flex-grow: 0;
+    position: absolute;
+}
+
+.search-form label .search-icon {
+    border-right: .1em solid var(--text-color-primary);
+    height: 100%;
+    display: inline-block;
+    padding: 0 0.5em;
+    width: 20px;
+
 }
 
 header .search-form input {
     flex-grow: 1;
+    padding-left: 45px;
+    border-right: 0;
 }
 
 header .search-form button {
@@ -86,8 +108,12 @@ header .search-form button {
 
 header .header-menu {
     flex-grow: 0;
-    padding: 0;
+    padding: 0 1em;
     margin: 0;
+}
+
+header button {
+    cursor: pointer;
 }
 
 /* cite styles */
